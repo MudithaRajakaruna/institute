@@ -1,0 +1,10 @@
+services:
+  container:
+    environment:
+      MARIADB_ROOT_PASSWORD: maria
+    ports:
+      - 5000:3306
+    volumes:
+      - ~/mariadb:/var/lib/mariadb
+    image: mariadb
+    container_name: mariadb_container_2
